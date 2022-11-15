@@ -4,7 +4,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 public class JobBean {
 		int jobid;
-		String jdurl;
+		String jobdescurl;
 		String jobtitle;
 		MultipartFile description;
 		public int getJobid() {
@@ -13,11 +13,12 @@ public class JobBean {
 		public void setJobid(int jobid) {
 			this.jobid = jobid;
 		}
-		public String getJdurl() {
-			return jdurl;
+		 
+		public String getJobdescurl() {
+			return jobdescurl;
 		}
-		public void setJdurl(String jdurl) {
-			this.jdurl = jdurl;
+		public void setJobdescurl(String jobdescurl) {
+			this.jobdescurl = jobdescurl;
 		}
 		public String getJobtitle() {
 			return jobtitle;

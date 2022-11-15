@@ -21,7 +21,7 @@
 			<tr>
 				<td>${j.jobid }</td>
 				<td>${j.jobtitle }</td>
-				<td><a href="${j.jdurl }" target="_blank">JD</a></td>
+				<td><a href="${j.jobdescurl }" target="_blank">JD</a></td>
 			</tr>
 		</c:forEach>
 	</table>

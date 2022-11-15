@@ -15,7 +15,7 @@ public class JobDao {
 	JdbcTemplate stmt;
 	
 	public void insertJob(JobBean job) {
-			stmt.update("insert into jobs (jobtitle,jobdescurl) values (?,?)",job.getJobtitle(),job.getJdurl());
+			stmt.update("insert into jobs (jobtitle,jobdescurl) values (?,?)",job.getJobtitle(),job.getJobdescurl());
 	}
 
 	public List<JobBean> getAllJobs() {

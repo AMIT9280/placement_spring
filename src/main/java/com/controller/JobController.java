@@ -47,7 +47,7 @@ public class JobController {
 		fos.write(b);
 		fos.close();
 		
-		job.setJdurl("resources\\jd\\" + ts+"_"+job.getDescription().getOriginalFilename());
+		job.setJobdescurl("resources\\jd\\" + ts+"_"+job.getDescription().getOriginalFilename());
 		jobdao.insertJob(job);
 	 } catch (Exception e) {
 		e.printStackTrace();   
@@ -57,7 +57,7 @@ public class JobController {
  @GetMapping("/listjob")
  public String listJob(Model model) {
 	 List<JobBean> jobs = jobdao.getAllJobs();	 
-	 model.addAttribute("Jobs", jobs);	
+	 model.addAttribute("jobs", jobs);	
 	 return "ListJobs";
  }
 }
